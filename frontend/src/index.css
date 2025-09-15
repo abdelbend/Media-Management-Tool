@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-outline-gray {
+  -webkit-text-stroke: 1px #1f2937;
+  -webkit-text-fill-color: currentColor;
+}

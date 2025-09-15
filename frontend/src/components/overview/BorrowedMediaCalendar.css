@@ -1,0 +1,86 @@
+.react-calendar {
+    border: none;
+    font-family: inherit;
+  }
+  
+  /* Navigation buttons */
+  .react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  /* Weekday labels */
+  .react-calendar__month-view__weekdays {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+  
+  /* Day tiles */
+  .react-calendar__tile {
+    height: 80px;
+    padding: 5px;
+    position: relative;
+    background: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Active day */
+  .react-calendar__tile--active {
+    background: #6366F1; /* Indigo-500 */
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Today */
+  .react-calendar__tile--now {
+    background: #10B981; /* Emerald-500 */
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect */
+  .react-calendar__tile:hover {
+    background-color: rgba(99, 102, 241, 0.1); /* Indigo-500 with opacity */
+  }
+  
+  /* Active tile hover */
+  .react-calendar__tile--active:hover {
+    background: #4F46E5; 
+  }
+  
+  /* Dark mode adjustments */
+  .dark .react-calendar__month-view__weekdays {
+    color: #D1D5DB; 
+  }
+  
+  .dark .react-calendar__tile--active {
+    background: #6366F1; 
+    color: white;
+  }
+  
+  .dark .react-calendar__tile--now {
+    background: #10B981; 
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .react-calendar__tile {
+      height: 60px;
+    }
+  }
+  
